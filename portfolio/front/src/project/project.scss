@@ -1,0 +1,85 @@
+@import '../style/style.scss';
+
+#project-container {
+    background-image: url('../../public/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#projectlist {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 90vh;
+    width: 100%;
+
+}
+
+#project-btn {
+    border: white 3px solid;
+    border-radius: 3px;
+    width: 5vw;
+    transition: 0.1s ease-out;
+    cursor: pointer;
+}
+
+#project-btn:hover {
+    transform: scale(1.3);
+}
+
+#project-btn:active {
+    transform: scale(1.5);
+}
+
+#project-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.project-desc {
+    font-family: AnonymousPro;
+    font-size: larger;
+}
+
+#tech {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.icon {
+    width: 100px;
+}
+
+@media screen and (max-width: 1400px) {
+    .icon {
+        width: 64px;
+    }
+    .project-desc {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .icon {
+        width: 48px;
+    }
+    .project-desc {
+        font-size: small;
+    }
+}
+
+.arrow {
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
+.arrow:active {
+    transform: scale(1.5);
+}
