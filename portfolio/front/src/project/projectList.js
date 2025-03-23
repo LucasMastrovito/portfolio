@@ -11,7 +11,7 @@ function ProjectList(props) {
     return (
         <div id="projectlist">
             <img alt="left" className="arrow" src="/arrow_left.png" value='left' onClick={props.click} />
-            <div className="flex">
+            <div className="flex" style={{width: 'auto', gap: '20px'}}>
                 <ProjectButton index={props.index > 0 ? props.index - 1 : props.projects.length - 1} click={props.change} projects={props.projects}></ProjectButton>
                 <ProjectButton index={props.index} click={props.change} projects={props.projects}></ProjectButton>
                 <ProjectButton index={props.index < props.projects.length - 1 ? props.index + 1 : 0} click={props.change} projects={props.projects}></ProjectButton>
