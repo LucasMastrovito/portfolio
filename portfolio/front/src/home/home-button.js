@@ -4,7 +4,6 @@ function HomeButton(props) {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        console.log(props.redirect)
         navigate(props.redirect);
     }
 

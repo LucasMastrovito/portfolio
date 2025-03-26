@@ -36,3 +36,29 @@
   
     animation: disable-#{$duration}-#{$delay} $duration linear $delay;
 }
+
+@mixin slidein($duration, $delay) {
+  @keyframes slidein-#{$duration}-#{$delay} {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  animation: slidein-#{$duration}-#{$delay} $duration linear $delay;
+}
+
+@mixin slideout($duration, $delay) {
+  @keyframes slideout-#{$duration}-#{$delay} {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  animation: slideout-#{$duration}-#{$delay} $duration linear $delay;
+}

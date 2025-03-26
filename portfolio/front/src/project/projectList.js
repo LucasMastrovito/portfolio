@@ -1,5 +1,4 @@
 function ProjectButton(props) {
-    console.log(props)
     return (
         <div id="project-btn" className="shadow" onClick={props.click}>
             <img id="project-pic" alt={props.index} src={props.projects[props.index].props.path} />

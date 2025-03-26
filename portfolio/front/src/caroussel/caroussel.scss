@@ -1,0 +1,7 @@
+@for $i from 1 through 10 {
+    .c-#{$i} {
+      transform: translateX(#{($i - 1) * 100%});
+      animation-fill-mode: forwards;
+      transition: transform 0.5s ease-in-out;
+    }
+  }

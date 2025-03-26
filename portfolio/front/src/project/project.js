@@ -1,3 +1,4 @@
+import Navbar from '../navbar/navbar';
 import './project.scss';
 
 function Project(props) {
@@ -10,6 +11,7 @@ function Project(props) {
     
     return (
         <div id="project-container" style={{'backgroundImage': `url('${props.path}')`}}>
+            <Navbar></Navbar>
             <div id='entitle'>
                 <h1 id='name' className='outline'>{name}</h1>
                 <div className='card shadow' style={{marginLeft: '1vw'}}>
