@@ -1,3 +1,4 @@
+import Caroussel from '../caroussel/caroussel.js';
 import Project from '../project/project.js';
 import ProjectPage from '../projectPage/projectPage.js';
 
@@ -10,6 +11,7 @@ function Pro() {
 
     return (
         <div>
+            <Caroussel></Caroussel>
             <ProjectPage projects={projects}></ProjectPage>
         </div>
     )

@@ -162,6 +162,7 @@ input:focus-within {
     display: flex;
     flex-direction: column;
     margin-left: 2vw;
+    width: fit-content;
 }
 
 .links {
@@ -169,4 +170,5 @@ input:focus-within {
     font-size: 300;
     position: relative;
     color: white;
+    width: fit-content;
 }
