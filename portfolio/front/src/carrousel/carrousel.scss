@@ -27,3 +27,26 @@
     width: 100%;
     height: 100%;
 }
+
+
+.arrow {
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.arrow:active {
+  transform: scale(1.5);
+}
+
+#carrousellist {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 90vh;
+  height: 5vh;
+  width: 100%;
+}

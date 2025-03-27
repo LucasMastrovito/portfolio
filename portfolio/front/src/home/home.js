@@ -20,16 +20,26 @@ function Home() {
 
     useEffect(() => {
         if (location.hash !== '') {
-            window.dispatchEvent(new CustomEvent("updateCaroussel", { detail: location.hash.slice(1)}));
+            window.dispatchEvent(new CustomEvent("updateCaroussel", {
+                detail: {
+                    id: 1,
+                    index: location.hash.slice(1)
+                }
+            }));
         } else {
-            window.dispatchEvent(new CustomEvent("updateCaroussel", { detail: '0'}));
+            window.dispatchEvent(new CustomEvent("updateCaroussel", {
+                detail: {
+                    id: 1,
+                    index: '0'
+                }
+            }));
         }
     }, [location])
 
     return (
         <div id='home-container'>
             <Navbar></Navbar>
-            <Carrousel></Carrousel>
+            <Carrousel id={1}></Carrousel>
             <Profile></Profile>
             <Competencies></Competencies>
             <Contact></Contact>

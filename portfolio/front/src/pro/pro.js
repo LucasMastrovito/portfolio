@@ -19,9 +19,9 @@ function Pro() {
     return (
         <div id='perso-container'>
             <Navbar></Navbar>
-            <Carrousel></Carrousel>
+            <Carrousel id={2}></Carrousel>
             {projects}
-            <CarrouselList></CarrouselList>
+            <CarrouselList id={2}></CarrouselList>
         </div>
     )
 }
