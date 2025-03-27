@@ -4,7 +4,7 @@ function Project(props) {
     const name = props.name;
     
     return (
-        <div className={'c-' + props.id + ' page'} id="project-container" style={{backgroundImage: `url(${props.path})`}}>
+        <div className={'c-' + props.id + ' page'} id="project-container" style={{backgroundImage: `url(/bg/${props.path})`}}>
             <div id='entitle'>
                 <h1 id='name' className='outline'>{name}</h1>
                 <div className='card shadow' style={{marginLeft: '1vw'}}>

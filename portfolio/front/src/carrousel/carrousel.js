@@ -21,6 +21,7 @@ function Carrousel() {
             setIndex(newIndex);
             window.dispatchEvent(new CustomEvent("newIndexCarroussel", { detail: newIndex }));
         };
+
         const handleIndexChange = (e) => {
             console.log(e.detail);
             if (e.detail === '+') {
@@ -38,7 +39,7 @@ function Carrousel() {
         };
     }, [index]);
 
-    return (<div></div>)
+    return (<div id='carrousel'></div>)
 }
 
 export default Carrousel;

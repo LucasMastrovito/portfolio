@@ -5,3 +5,25 @@
       transition: transform 0.5s ease-in-out;
     }
   }
+
+#slide-btn {
+    border: white 3px solid;
+    border-radius: 3px;
+    width: 5vh;
+    transition: 0.1s ease-out;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+#slide-btn:hover {
+    transform: scale(1.3);
+}
+
+#slide-btn:active {
+    transform: scale(1.5);
+}
+
+#slide-pic {
+    width: 100%;
+    height: 100%;
+}
