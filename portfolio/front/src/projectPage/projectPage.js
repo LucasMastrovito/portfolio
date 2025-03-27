@@ -1,6 +1,8 @@
 import ProjectList from '../project/projectList.js';
 import { useState } from 'react';
 import './projectPage.scss';
+import CarrouselList from '../carrousel/carrouselList.js';
+import Navbar from '../navbar/navbar.js';
 
 function ProjectPage(props) {
     const projects = props.projects;
@@ -20,8 +22,12 @@ function ProjectPage(props) {
 
     return (
         <div id='perso-container'>
-            {projects[index]}
-            <ProjectList click={changeProject} change={clickOnProject} projects={projects} index={index}></ProjectList>
+            <Navbar></Navbar>
+            <div id='projects'>
+                {projects}
+            </div>
+            <CarrouselList click={changeProject} change={clickOnProject} projects={projects} index={index}></CarrouselList>
+            {/* <ProjectList click={changeProject} change={clickOnProject} projects={projects} index={index}></ProjectList> */}
         </div>
     )
 }

@@ -1,0 +1,29 @@
+.techno {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: TT Interphases;
+    font-weight: 100;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 100px;
+}
+
+@media screen and (max-width: 1400px) {
+    .icon {
+        width: 64px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .icon {
+        width: 24px;
+    }
+}

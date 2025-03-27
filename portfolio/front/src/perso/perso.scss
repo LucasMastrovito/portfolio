@@ -1,1 +1,18 @@
 @import '../style/style.scss';
+
+#perso-container {
+    background-image: url('../../public/home.jpg');
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: calc(var(--mouse-x) * 100%) calc(var(--mouse-y) * 100%);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+@media only screen and (max-width: 1800px) {
+    #perso-container {
+        background-size: cover;
+        background-position: center;
+    }
+}

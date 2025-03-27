@@ -1,11 +1,17 @@
 @import '../style/style.scss';
 
 #project-container {
-    background-image: url('../../public/home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     height: 100vh;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1800px) {
+    #project-container {
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 #projectlist {
@@ -51,7 +57,7 @@
     margin-left: 5%;
 }
 
-.icon {
+/* .icon {
     width: 100px;
 }
 
@@ -71,7 +77,7 @@
     .project-desc {
         font-size: small;
     }
-}
+} */
 
 .arrow {
     cursor: pointer;

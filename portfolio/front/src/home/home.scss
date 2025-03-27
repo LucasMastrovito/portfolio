@@ -170,3 +170,38 @@ input:focus-within {
     position: relative;
     color: white;
 }
+
+#tech-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 1fr;
+    justify-items: center;
+    width: 80%;
+}
+
+@media screen and (max-width: 1200px) {
+    #tech-container {
+        grid-template-columns: repeat(8, 1fr);
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #tech-container {
+        grid-template-columns: repeat(6, 1fr);
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #tech-container {
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #home-container {
+        overflow-y: scroll;
+    }
+}

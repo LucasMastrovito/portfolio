@@ -44,6 +44,7 @@
     width: 40vw;
     min-height: 20vh;
     padding: 2vh;
+    backdrop-filter: blur(8px);
 }
 
 @media screen and (max-width: 1200px) {
