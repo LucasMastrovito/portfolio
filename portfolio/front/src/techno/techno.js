@@ -6,7 +6,7 @@ function Techno(props) {
             <div className='icon-container'>
                 <img className="icon" alt={props.name} src={'/logo/' + props.path} />
             </div>
-            <p>{props.name}</p>
+            <p className='outline'>{props.name}</p>
         </div>
     )
 }

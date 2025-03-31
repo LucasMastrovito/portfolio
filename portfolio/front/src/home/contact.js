@@ -10,15 +10,15 @@ function Contact() {
                 </div>
                 <form id='contact-form' className='card' action="mailto:lucas.mastrovito@epitech.eu" method="post" enctype="text/plain">
                     <div className='input'>
-                        <label className='outline' for='name'>Nom: </label>
+                        <label className='outline' htmlFor='name'>Nom: </label>
                         <input type="text" name="name" />
                     </div>
                     <div className='input'>
-                        <label className='outline' for='mail'>Mail: </label>
+                        <label className='outline' htmlFor='mail'>Mail: </label>
                         <input type="text" name="mail" />
                     </div>
                     <div className='input' style={{height: '40%'}}>
-                        <label className='outline' for='comment'>Message: </label>
+                        <label className='outline' htmlFor='comment'>Message: </label>
                         <textarea style={{height: '60%'}} type="text" name="comment" size="50" />
                     </div>
                     <input className='form-btn' type="submit" value="Send" />
