@@ -11,7 +11,7 @@ function Project(props) {
     }
     
     return (
-        <div className={'c-' + props.id + ' page'} id="project-container" style={{backgroundImage: `url(${props.folder}bg.${props.ext})`}}>
+        <div className={'c-' + props.id + ' page'} id="project-container" style={{backgroundImage: `url(${process.env.PUBLIC_URL}${props.folder}bg.${props.ext})`}}>
             <Screens display={imgs} pics={props.pics} toggle={toggleImgs} folder={props.folder}></Screens>
             <div id='entitle'>
                 <h1 id='name' className='big-outline'>{props.name}</h1>
