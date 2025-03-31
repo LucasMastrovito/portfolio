@@ -19,10 +19,10 @@ function Navbar() {
         <div id='navbar'>
             <div id='navcontainer'>
                 <NavbarButton name='Accueil' path='/'></NavbarButton>
-                <NavbarButton name='Projets pro' path='/pro'></NavbarButton>
-                <NavbarButton name='Projets perso' path='/personnal'></NavbarButton>
                 <NavbarButton name='Compétences' path='/#1'></NavbarButton>
                 <NavbarButton name='Contact' path='/#2'></NavbarButton>
+                <NavbarButton name='Projets pro' path='/pro'></NavbarButton>
+                <NavbarButton name='Projets perso' path='/personnal'></NavbarButton>
             </div>
         </div>
     )
