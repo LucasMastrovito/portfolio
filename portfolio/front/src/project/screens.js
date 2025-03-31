@@ -4,7 +4,7 @@ import CarrouselList from "../carrousel/carrouselList";
 function Screen(props) {
     return (
         <div className={'c-' + props.i + ' screen'}>
-            <img className="pic" alt={props.i} src={props.folder + props.i + '.png'} />
+            <img className="pic" alt={props.i} src={process.env.PUBLIC_URL + props.folder + props.i + '.png'} />
         </div>
     )
 }

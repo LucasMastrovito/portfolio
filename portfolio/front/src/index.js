@@ -7,7 +7,7 @@ import Router from './router';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/portfolio">
     <Router></Router>
   </BrowserRouter>
 );

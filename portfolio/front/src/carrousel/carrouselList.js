@@ -65,13 +65,13 @@ function CarrouselList(props) {
 
     return ( isLoaded && active ?
         <div id="carrousellist" style={props.style}>
-            <img alt="left" className="arrow" style={{marginLeft: '3vw'}} src="/arrow_left.png" value='left' onClick={click} />
+            <img alt="left" className="arrow" style={{marginLeft: '3vw'}} src={`${process.env.PUBLIC_URL}/arrow_left.png`} value='left' onClick={click} />
             {/* <div className="flex" style={{width: 'auto', gap: '30px'}}>
                 <SlideBtn index={index > 0 ? index - 1 : divs.length - 1} divs={divs} scale='1'></SlideBtn>
                 <SlideBtn index={index} divs={divs} scale='1.5'></SlideBtn>
                 <SlideBtn index={index < divs.length - 1 ? index + 1 : 0} divs={divs} scale='1'></SlideBtn>
             </div> */}
-            <img alt="right" className="arrow" style={{marginRight: '3vw'}} src="/arrow_right.png" value='right' onClick={click} />
+            <img alt="right" className="arrow" style={{marginRight: '3vw'}} src={`${process.env.PUBLIC_URL}/arrow_right.png`} value='right' onClick={click} />
         </div> : null
     )
 }

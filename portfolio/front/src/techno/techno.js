@@ -4,7 +4,7 @@ function Techno(props) {
     return (
         <div className="techno">
             <div className='icon-container'>
-                <img className="icon" alt={props.name} src={'/logo/' + props.path} />
+                <img className="icon" alt={props.name} src={`${process.env.PUBLIC_URL}/logo/` + props.path} />
             </div>
             <p className='outline'>{props.name}</p>
         </div>
