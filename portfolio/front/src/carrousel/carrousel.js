@@ -4,7 +4,21 @@ import './carrousel.scss';
 function Carrousel(props) {
     const id = props.id;
     const ref = useRef(null);
+    const [active, setActive] = useState(true);
     const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const updateActive = (e) => {
+            if (e.detail.id === id) {
+                setActive(e.detail.active);
+            }
+        };
+        window.addEventListener("activeCarrousel", updateActive);
+
+        return() => {
+            window.removeEventListener("activeCarrousel", updateActive);
+        };
+    }, [active, id]);
 
     useEffect(() => {
         const slide = (newIndex) => {
@@ -28,7 +42,7 @@ function Carrousel(props) {
         };
 
         const handleIndexChange = (e) => {
-            if (e.detail.id === id) {
+            if (active && e.detail.id === id) {
                 if (e.detail.index === '+') {
                     slide(index + 1);
                 } else if (e.detail.index === '-') {
@@ -38,12 +52,25 @@ function Carrousel(props) {
                 }
             }
         };
+
+        const handleKeyboard = (event) => {
+            if (active) {
+                if (event.key === 'ArrowLeft') {
+                    slide(index - 1);
+                } else if (event.key === 'ArrowRight') {
+                    slide(index + 1);
+                }
+            }
+        };
+
         window.addEventListener("updateCaroussel", handleIndexChange);
+        window.addEventListener('keydown', handleKeyboard);
 
         return() => {
             window.removeEventListener("updateCaroussel", handleIndexChange);
+            window.removeEventListener('keydown', handleKeyboard);
         };
-    }, [index, id]);
+    }, [index, id, active]);
 
     return (<div ref={ref} id='carrousel'></div>)
 }

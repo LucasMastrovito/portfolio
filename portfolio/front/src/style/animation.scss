@@ -62,3 +62,16 @@
 
   animation: slideout-#{$duration}-#{$delay} $duration linear $delay;
 }
+
+@mixin translateLeft() {
+  @keyframes translateLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-10px);
+    }
+  }
+
+  animation: translateLeft infinite linear;
+}

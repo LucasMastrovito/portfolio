@@ -8,6 +8,10 @@ function Project(props) {
     const toggleImgs = (e) => {
         setImgs(!imgs);
         window.dispatchEvent(new CustomEvent('activeCarrouselList', {detail: imgs}));
+        window.dispatchEvent(new CustomEvent('activeCarrousel', {detail: {
+            id: 2,
+            active: imgs
+            }}));
     }
     
     return (

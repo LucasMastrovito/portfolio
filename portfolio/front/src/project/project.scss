@@ -88,8 +88,9 @@
 #display {
     cursor: pointer;
     width: fit-content;
+    transition: 100ms ease;
 }
 
 #display:hover {
-    color: #c0c4c4;
+    transform: scale(1.1);
 }

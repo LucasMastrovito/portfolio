@@ -15,8 +15,15 @@ function NavbarButton(props) {
 }
 
 function Navbar() {
+    const navigate = useNavigate();
+
+    const onClick = () => {
+        navigate('/');
+    }
+
     return (
         <div id='navbar'>
+            <img alt='home' id='navbtn' className='home-icon' src={process.env.PUBLIC_URL + '/pp.jpg'} onClick={onClick} style={{height: '48px', border: '2px solid grey'}} />
             <div id='navcontainer'>
                 <NavbarButton name='Accueil' path='/'></NavbarButton>
                 <NavbarButton name='Compétences' path='/#1'></NavbarButton>

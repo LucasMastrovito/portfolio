@@ -8,7 +8,7 @@ function Contact() {
                     <a className='links outline' href='https://www.linkedin.com/in/lucas-mastrovito/'>LinkedIn</a>
                     <a className='links outline' href='https://github.com/LucasMastrovito/'>GitHub</a>
                 </div>
-                <form id='contact-form' className='card' action="mailto:lucas.mastrovito@epitech.eu" method="post" enctype="text/plain">
+                <form id='contact-form' className='card-white' action="mailto:lucas.mastrovito@epitech.eu" method="post" enctype="text/plain">
                     <div className='input'>
                         <label className='outline' htmlFor='name'>Nom: </label>
                         <input type="text" name="name" />

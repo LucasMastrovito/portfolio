@@ -4,7 +4,29 @@
       animation-fill-mode: forwards;
       transition: transform 0.5s ease-in-out;
     }
+}
+
+@mixin translate($to) {
+  @keyframes translate-#{$to} {
+    0% {
+      transform: translateX(0);
+    }
+
+    25% {
+      transform: translateX($to);
+    }
+
+    50% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translate(0);
+    }
   }
+
+  animation: translate-#{$to} 3s infinite ease;
+}
 
 #slide-btn {
     border: white 3px solid;
@@ -28,7 +50,6 @@
     height: 100%;
 }
 
-
 .arrow {
   cursor: pointer;
   transition: 0.3s ease-out;
@@ -40,6 +61,14 @@
 
 .arrow:active {
   transform: scale(1.5);
+}
+
+.arrow-left {
+  @include translate(-10px);
+}
+
+.arrow-right {
+  @include translate(10px);
 }
 
 #carrousellist {

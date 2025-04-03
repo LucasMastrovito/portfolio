@@ -33,3 +33,19 @@
 #navbtn:hover {
     transform: translateY(-3px);
 }
+
+#navbtn:active {
+    transform: scale(1.2);
+}
+
+.home-icon {
+    border-radius: 50%;
+    border: 10px solid white;
+    width: 48px;
+}
+
+@media screen and (max-width: 800px) {
+    .home-icon {
+        display: none;
+    }
+}
