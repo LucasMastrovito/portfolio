@@ -74,13 +74,6 @@ html {
     animation-fill-mode: forwards;
 }
 
-@media screen and (max-width: 800px) {
-    #home-btn {
-        font-size: larger;
-        height: 6vh;
-    }
-}
-
 #home-btn:hover {
     transform: scale(1.1);
 }
@@ -113,7 +106,8 @@ html {
 
 @media screen and (max-width: 1024px) {
     #contact-form {
-        width: 80vw;
+        max-width: 80%;
+        width: 80%;
     }
 }
 
@@ -193,6 +187,28 @@ input:focus-within {
 .link-img {
     width: 48px;
     height: 48px;
+}
+
+@media screen and (max-width: 800px) {
+    #home-btn {
+        font-size: larger;
+        height: 6vh;
+    }
+
+    #contact-container {
+        flex-direction: column-reverse;
+    }
+
+    #links-container {
+        width: 80%;
+        min-height: 10vh;
+        gap: 0;
+        font-size: smaller;
+    }
+
+    #lien {
+        display: none;
+    }
 }
 
 #tech-container {

@@ -30,7 +30,6 @@ function Navbar() {
                 <NavbarButton name='Contact' path='/#2'></NavbarButton>
                 <NavbarButton name='Projets pro' path='/pro'></NavbarButton>
                 <NavbarButton name='Projets perso' path='/personnal'></NavbarButton>
-                <button id='cv-btn'>CV</button>
             </div>
         </div>
     )

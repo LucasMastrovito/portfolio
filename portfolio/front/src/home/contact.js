@@ -20,7 +20,7 @@ function Contact() {
                         <input className='form-btn' type="submit" value="Send" />
                     </form>
                     <div id='links-container' className="card-white">
-                        <h2 style={{marginTop: '0', fontStyle: 'italic'}}>Liens :</h2>
+                        <h2 id="lien" style={{marginTop: '0', fontStyle: 'italic'}}>Liens :</h2>
                         <div className="link">
                             <img className="link-img" alt="mail" src={process.env.PUBLIC_URL + '/mail.png'}/>
                             <h3 className='links outline' style={{margin: '0'}}>lucas.mastrovito@epitech.eu</h3>
@@ -33,7 +33,15 @@ function Contact() {
                             <img className="link-img" alt="github" src={process.env.PUBLIC_URL + '/logo/git.png'} />
                             <a className='links outline' href='https://github.com/LucasMastrovito/'>GitHub</a>
                         </div>
-                        <button className="form-btn" style={{alignSelf: 'center', height: '3vh', width: '40%'}}>CV</button>
+                        <a
+                            href="/cv.pdf"
+                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{display: 'flex', justifyContent: 'center', width: '100%', textDecoration: 'none'}}
+                        >
+                            <button className="form-btn" style={{alignSelf: 'center', height: '3vh', width: '40%'}}>CV</button>
+                        </a>
                     </div>
                 </div>
                 
