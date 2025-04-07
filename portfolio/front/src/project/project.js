@@ -24,7 +24,7 @@ function Project(props) {
                     <div id='tech'>
                         {props.logos}
                     </div>
-                    <p id='display' className='project-desc outline' onClick={toggleImgs} style={{fontWeight: ''}}>Voir les images</p>
+                    <p id='display' className='project-desc outline' onClick={toggleImgs} style={{display: props.pics > 0 ? 'block' : 'none', fontWeight: ''}}>Voir les images</p>
                 </div>
                 
             </div>

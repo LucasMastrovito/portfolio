@@ -17,6 +17,17 @@
     justify-content: center;
 }
 
+.glow-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 1;
+    pointer-events: none;
+  }
+
 .icon {
     width: 100px;
 }
@@ -25,10 +36,22 @@
     .icon {
         width: 64px;
     }
+
+    .glow-circle {
+        width: 64px;
+        height: 64px;
+        filter: blur(30px);
+    }
 }
 
 @media screen and (max-width: 400px) {
     .icon {
         width: 24px;
+    }
+
+    .glow-circle {
+        width: 24px;
+        height: 24px;
+        filter: blur(15px);
     }
 }
