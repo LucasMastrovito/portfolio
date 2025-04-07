@@ -3,7 +3,7 @@ import Techno from "../techno/techno";
 function Competencies() {
     const tech = [];
 
-    tech.push(<Techno key='1' name='Unreal Engine' path='ue.svg'></Techno>);
+    tech.push(<Techno key='1' name='Unreal Engine' path='ue.png'></Techno>);
     tech.push(<Techno key='2' name='JavaScript' path='js.png'></Techno>);
     tech.push(<Techno key='3' name='HTML' path='html.png'></Techno>);
     tech.push(<Techno key='4' name='CSS' path='css.svg'></Techno>);
@@ -28,7 +28,7 @@ function Competencies() {
             <div id='entitle'>
                 <h1 id='name'>Competences</h1>
                 <h3 id='description'>Suite à mes nombreux projets d'études, personnels, et professionnels que j'ai eu la chance de réaliser en alternance et en CDI,<br></br>j'ai eu l'occasion d'expérimenter beaucoup de technologies et d'outils différents.</h3>
-                <div id="tech-container" className="card-white">
+                <div id="tech-container" className="card">
                     {tech}
                 </div>
             </div>
